@@ -1,0 +1,632 @@
+:root {
+    --amarelo: #faf9b7;
+    --branco-bg: #F5F5F5;
+    --roxo: #4c047c;
+    --darkViolet: #A548FF;
+    --preto: #111;
+    --LessViolet: #F3DCFD;
+    --placeholder: #A2A2A2;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+  
+body::-webkit-scrollbar-track {
+    background: var(--amarelo);        
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--darkViolet);    
+    border-radius: 20px;       
+    border: 2px solid var(--darkViolet);  
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--amarelo-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding-bottom: 32px;
+}
+
+.secao__Titulo {
+    font-weight: 700;
+    color: var(--preto);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 32px 0 16px;
+}
+
+.telefone__Contato {
+    display: none;
+}
+
+/* Header */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.container__fotoTitulo {
+    display: flex;
+    align-items: center;
+}
+
+.meuNome {
+    padding-left: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.memoji {
+    width: 24px;
+    height: 24px;
+}
+
+.link__site {
+    color: var(--preto);
+    font-size: 0.8rem;
+}
+
+/* Seção Apresentação */
+
+.secao__apresentacao {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.minha__foto {
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+}
+
+.me__apresentando {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.apresentacao__textos {
+    display: flex;
+    flex-direction: column;  
+    gap: 16px;
+}
+
+.resumo {
+    font-size: 1rem;
+    color: var(--preto);
+}
+
+.container__redeSociais {
+    display: flex;
+    gap: 8px;
+}
+
+.redeSociais {
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--preto);
+}
+
+/* Secao Sobre mim */
+
+.secao__sobreMim {
+    background-color: var(--LessViolet);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.secao__TituloSM {
+    font-weight: 700;
+    color: var(--preto);
+    font-size: 1.5rem;
+}
+
+.resumo__Sobremim {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--preto);
+    font-size: 0.875rem;
+}
+
+.assinatura {
+    width: 140px;
+    height: 52px;
+    align-self: flex-start;
+}
+
+/* Secao Skills e Hobbies */
+
+.container__dados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.dados__card {
+    background: var(--amarelo);
+    width: 156px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+}
+
+.simbologias {
+    width: 30px;
+    height: 27px;
+    padding: 0 16px;
+}
+
+.simbologia__titulo {
+    font-weight: bold;
+    color: var(--preto);
+    padding: 0 16px 16px;
+}
+
+/* Seção Formação acadêmica */
+
+.secao__fAcademica {
+    background-color: var(--LessViolet);
+}
+
+.ensino__container,
+.experiencia__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.ensino__card {
+    width: 296px;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ensino__dados {
+    background-color: var(--amarelo);
+    height: 118px;
+    display: flex;
+    justify-content: center;
+}
+
+.ensino__assunto {
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.ensino__duracao {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.espaco {
+    padding-bottom: 32px;
+}
+
+/* Experiência Profissional */
+.experiencia__dados {
+    height: 300px;
+}
+
+.experiencia__card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 100px;
+}
+
+.experiencia__imagemContainer {
+    padding-bottom: 16px;
+}
+
+.experiencia__imagem {
+    width: 296px;
+    height: 144px;
+}
+
+.experiencia__titulo {
+    font-weight: 700;
+}
+
+.botoes {
+    display: flex;
+    gap: 8px;
+}
+
+.direcionador__link {
+    width: 90px;
+    padding: 12px 16px;
+    border: solid;
+    text-align: center;
+    border: var(--darkViolet) solid;
+    color: var(--darkViolet);
+}
+
+.Site {
+    background-color: var(--darkViolet);
+    color: var(--branco);
+}
+
+/* Contato */
+
+.secao__Contato {
+    background-color: var(--LessViolet);
+    height: 675px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contato__apresentacao {
+    width: 296px;
+    height: 110px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+
+.contato__titulo {
+    width: 296px;
+    font-weight: 700;
+    color: var(--preto);
+    font-size: 1.5rem;
+}
+
+.contato__descricao {
+    width: 296px;
+}
+
+.contato__tituloForm {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+form {
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputs {
+    height: 397px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.single-input{
+    width: 296px;
+    height: 56px;
+    position: relative;
+}
+.single-input label{
+    position: absolute;
+    bottom: 22px;
+    left: 12px;
+    color: var(--placeholder);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input{
+    width: 284px;
+    height: 46px;
+    padding: 5px 0 0 12px;
+    border: 0;
+    border-bottom: 2px solid var(--roxo);
+    outline: 0;
+    font-size: 16px;
+    color: var(--preto);
+    transition: 0.5s ease-in-out;
+}
+
+.textArea {
+    resize: none;
+    height: 133px;
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid var(--darkViolet);
+}
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-18px);
+    font-size: 12px;
+    color: var(--darkViolet);
+}
+
+.botao__enviar {
+    width: 141px;
+    height: 40px;
+    position: relative;
+    top: 32px;
+    background-color: darkviolet;
+    padding: 12px 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rodapé */
+
+.rodape {
+    height: 10px;
+    background-color: var(--branco);
+}
+
+.autor {
+    padding: 15px;
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    /* Apresentação */
+
+    .secao__apresentacao {
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        gap: 48px;
+    }
+
+    .apresentacao__textos {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .minha__foto {
+        width: 146px;
+        height: 146px;
+        order: 2;
+    }
+
+    .container__redeSociais, .me__apresentando, .resumo {
+        width: 524px;
+    }
+
+    .container__redeSociais {
+        gap: 32px;
+    }
+
+    /* Sobre mim */
+
+    .secao__TituloSM, .resumo__Sobremim {
+        width: 704px;
+    }
+
+    /* Skills & Hobbies */
+
+    .dados__card {
+        width: 224px;
+    }
+
+    /* Formação Academica */
+
+    .ensino__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .espaco {
+        padding: 0;
+    }
+
+    /* Experiência */
+
+    .experiencia__container {
+        height: 1900px; 
+        justify-content: start;
+    }
+       
+    .experiencia__container {
+        gap: 64px;
+    }
+
+    .experiencia__card {
+        margin: 0;
+    }
+
+    .experiencia__imagem {
+        background-color: var(--LessViolet);
+        width: 704px;
+        height: 320px;
+    }
+
+    .experiencia__dados {
+        height: 427px;
+    }
+
+    .experiencia__imagemContainer {
+        padding: 0;
+    }
+
+    /* Contato */
+
+    .contato__apresentacao {
+        width: 704px;
+        height: 72px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contato__titulo, .contato__descricao {
+        width: 100%;
+    }
+
+    form {
+        width: 704px;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .single-input {
+        width: 100%;
+    }
+
+    .input{
+        width: 690px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    /* Apresentação */
+    .me__apresentando {
+        font-size: 2rem;
+    }
+
+    .resumo {
+        font-size: 1.375rem;
+    }
+
+    .redeSociais {
+        font-size: 1rem;
+    }
+
+    .minha__foto {
+        width: 300px;
+        height: 300px;
+    }
+
+    .apresentacao__textos {
+        gap: 16px;
+    }
+
+    /* Sobre Mim */
+
+    .secao__sobreMim {
+        padding: 48px 0 48px 64px;
+    }
+
+    /* Skills e Hobbies */
+
+    .dados__card {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Formação Academica */
+
+    .ensino__card {
+        width: 200px;
+        height: 347px;
+    }
+    
+    .ensino__dados {
+        width: 100%;
+        height: 286px;
+    }
+
+    .ensino__imagem {
+        width: 98px;
+        height: 98px;
+        align-self: center;
+    }
+
+    /* Experiência Profissional */
+
+    .experiencia__container {
+        height: auto;
+    }
+    
+    .experiencia__card {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .experiencia__dados {
+        height: 350px;
+    }
+
+    .experiencia__imagemContainer {
+        width: 500px;
+    }
+
+    .orders {
+        order: 2;
+    }
+
+    .experiencia__imagem {
+        width: 100%;
+    }
+
+    .experiencia__textos {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 8px;
+    }
+
+    /* Contato */
+
+    .telefone__Contato {
+        display: block;
+        width: 150px;
+    }
+
+    .secao__Contato {
+        flex-direction: row;
+    }
+
+    .contato__apresentacao {
+        width: 600px;
+    }
+
+    form {
+        width: 600px;
+    }
+
+    .contato__tituloForm {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .inputs {
+        width: 600px;
+        align-items: start;
+    }
+
+    .single-input {
+        width: 600px;
+    }
+
+    .input {
+        width: 600px;
+    }
+}
